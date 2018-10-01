@@ -1,0 +1,533 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Sintony', sans-serif;
+}
+
+body button {
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(54, 57, 70, 0.5);
+          box-shadow: 0px 1px 1px 1px rgba(54, 57, 70, 0.5);
+  border: 1px solid #746c75;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body #section1 {
+  background: #ebebeb;
+}
+
+body #section2 {
+  background: #dedede;
+}
+
+body #section3 {
+  background: #c4c4c4;
+}
+
+body #section4 {
+  background: #a8a8a8;
+}
+
+body .main nav {
+  background-color: #f7f7f7;
+  color: #363946;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: sans-serif, Arial, Helvetica;
+  z-index: 1;
+}
+
+body .main nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 25px;
+}
+
+body .main nav .navBar div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+body .main nav .navBar .navLogo img {
+  height: 30px;
+}
+
+body .main nav .navBar .navItems {
+  font-size: 12px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+}
+
+body .main nav .navBar .navItems div {
+  margin-left: 20px;
+}
+
+body .main nav .navBar .navMenu {
+  cursor: pointer;
+}
+
+body .main nav .navBar .navMenu div {
+  width: 22px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body .main nav .navBar .navMenuExt {
+  background-color: #f7f7f7;
+  padding: 30px 50px 0 15px;
+  line-height: 3em;
+  height: 100vh;
+  width: 30vh;
+  position: absolute;
+  right: -2500px;
+  top: 0px;
+}
+
+body .main nav .navBar .navMenuExt p:first-child {
+  color: #363946;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+body .main nav .navBar .navMenuExt div {
+  border-bottom: 1px solid rgba(54, 57, 70, 0.3);
+}
+
+body .main nav .navBar .navMenuExt div:nth-child(2) {
+  border-bottom: 1px solid #363946;
+}
+
+body .main header {
+  background-image: url("../images/tech1.jpg");
+  /* Set a specific height */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .main header .mainHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 74px 25px 30px 25px;
+}
+
+body .main header .mainHeader .headerContent {
+  color: #ffffff !important;
+  text-align: center;
+}
+
+body .main header .mainHeader .headerContent h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+  padding: 10px 0;
+}
+
+body .main header .mainHeader .headerContent p {
+  font-style: italic;
+  font-size: 1em;
+  padding: 10px 0;
+}
+
+body .main header .mainHeader .headerButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0;
+}
+
+body .main header .mainHeader .headerButtons button {
+  color: white;
+  padding: 15px 0px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+body .main header .mainHeader .headerButtons button:first-child {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+body .main header .mainHeader .headerButtons button:last-child {
+  background-color: #2d51a3;
+  border: 1px solid white;
+}
+
+body .main section {
+  color: #363946;
+}
+
+body .main section #topics {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 40px;
+  display: block;
+}
+
+body .main section #topics h1 {
+  display: inline-block;
+  padding: 5px 8px;
+  border-bottom: 2px solid rgba(54, 57, 70, 0.6);
+}
+
+body .main section .mainSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 25px;
+}
+
+body .main section .mainSection .sectionCard {
+  text-align: center;
+  padding: 30px 8px;
+  margin: 20px auto;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  position: relative;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(54, 57, 70, 0.5);
+          box-shadow: 0px 1px 3px 1px rgba(54, 57, 70, 0.5);
+}
+
+body .main section .mainSection .sectionCard .sectionCardBody img {
+  height: 100px;
+  width: 80px;
+}
+
+body .main section .mainSection .sectionCard .sectionCardBody h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 25px 0;
+}
+
+body .main section .mainSection .sectionCard .sectionCardBody p {
+  font-style: italic;
+  font-size: 1em;
+  margin: 25px 0;
+  height: 130px;
+  display: none;
+}
+
+body .main section .mainSection .sectionCard .sectionButton a {
+  font-weight: 400;
+}
+
+body .main section .mainSection .sectionCard .sectionButton a button {
+  color: #363946;
+  background-color: transparent;
+  padding: 12px 40px;
+  border-radius: 3px;
+}
+
+body .main section .mainSection1 {
+  padding: 40px 25px;
+}
+
+body .main section .mainSection1 #speaker {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+body .main section .mainSection1 #speaker h1 {
+  display: inline-block;
+  padding: 5px 8px;
+  border-bottom: 2px solid rgba(54, 57, 70, 0.6);
+}
+
+body .main section .mainSection1 .section1Card {
+  text-align: center;
+  padding: 0px 8px;
+  margin: auto;
+}
+
+body .main section .mainSection1 .section1Card .section1CardBody img {
+  border: 1px solid #363946;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(54, 57, 70, 0.5);
+          box-shadow: 0px 1px 2px 1px rgba(54, 57, 70, 0.5);
+  border-radius: 100%;
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+body .main section .mainSection1 .section1Card .section1CardBody h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 10px 0;
+}
+
+body .main section .mainSection1 .section1Card .section1CardBody p {
+  font-style: italic;
+  font-size: 1em;
+  padding: 10px 0;
+  display: none;
+}
+
+body .main section .mainSection1 .section1Card .section1Button {
+  margin-top: 20px;
+}
+
+body .main section .mainSection1 .section1Card .section1Button a {
+  font-weight: 400;
+}
+
+body .main section .mainSection1 .section1Card .section1Button a button {
+  color: #363946;
+  background-color: transparent;
+  padding: 12px 40px;
+  border-radius: 3px;
+}
+
+body section .mainMap {
+  padding: 40px 25px;
+}
+
+body section .mainMap #touch {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+body section .mainMap #touch h1 {
+  display: inline-block;
+  padding: 5px 8px;
+  border-bottom: 2px solid rgba(54, 57, 70, 0.6);
+}
+
+body section .mainMap iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+body section .mainForm {
+  padding: 40px 25px;
+}
+
+body section .mainForm #message {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+body section .mainForm #message h1 {
+  display: inline-block;
+  padding: 5px 8px;
+  border-bottom: 2px solid rgba(54, 57, 70, 0.6);
+}
+
+body section .mainForm form label {
+  display: block;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+body section .mainForm form input {
+  text-transform: uppercase;
+  width: 100%;
+  outline: 0px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-bottom: 1px solid #ccc1cd;
+  background-color: #fafafa;
+  color: #805183;
+  padding: 6px 30px;
+  -webkit-box-shadow: 1px 1px 1px 0px;
+          box-shadow: 1px 1px 1px 0px;
+}
+
+body section .mainForm form textarea {
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  outline: 0px;
+  font-size: 1.2em;
+  resize: none;
+  height: 300px;
+  overflow: auto;
+  border: none;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc1cd;
+  background-color: #fafafa;
+  color: #805183;
+  padding: 15px 30px;
+  -webkit-box-shadow: 1px 1px 1px 0px;
+          box-shadow: 1px 1px 1px 0px;
+}
+
+body section .mainForm form button {
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(54, 57, 70, 0.5);
+          box-shadow: 0px 1px 1px 1px rgba(54, 57, 70, 0.5);
+  display: block;
+  background: transparent;
+  color: #363946;
+  margin: auto;
+  padding: 15px 0px;
+  width: 100%;
+}
+
+body footer {
+  background: #000;
+  color: #ccc;
+}
+
+body footer .mainFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 25px;
+  text-align: center;
+}
+
+body footer .mainFooter div {
+  margin: 5px;
+}
+
+body footer .mainFooter div a {
+  text-decoration: none;
+}
+
+body footer .mainFooter div a i {
+  color: #ccc;
+  margin: 3px;
+}
+
+@media (min-width: 321px) {
+  header .mainHeader {
+    padding: 144px 25px 100px 25px !important;
+  }
+}
+
+@media (min-width: 415px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+  header .wrapper {
+    width: 70%;
+  }
+  header .wrapper .mainHeader .headerButtons {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  header .wrapper .mainHeader .headerButtons button {
+    margin: 0 5px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  nav .navLogo img {
+    height: 40px !important;
+  }
+  header .wrapper {
+    width: 60%;
+  }
+  header .wrapper .mainHeader {
+    padding: 394px 25px 350px 25px !important;
+  }
+  section .mainSection {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section .mainSection .sectionCard {
+    -ms-flex-preferred-size: 47% !important;
+        flex-basis: 47% !important;
+  }
+  section .mainForm {
+    width: 80%;
+    margin: auto;
+  }
+  footer .mainFooter {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1025px) {
+  nav .navItems {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  nav .navMenu {
+    display: none;
+  }
+  header .wrapper {
+    width: 50%;
+    height: 100vh;
+  }
+  header .wrapper .mainHeader {
+    padding: 224px 25px 180px 25px !important;
+  }
+  section .mainSection .sectionCard {
+    -ms-flex-preferred-size: 23% !important;
+        flex-basis: 23% !important;
+  }
+  section .mainSection .sectionCard .sectionCardBody h1 {
+    height: 150px;
+  }
+  section .mainSection .sectionCard .sectionCardBody p {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  section .mainSection .sectionCard {
+    -ms-flex-preferred-size: 24% !important;
+        flex-basis: 24% !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
